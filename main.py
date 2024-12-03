@@ -9,14 +9,14 @@ import random
 
 
 # the path of .crx file
-EXTENSION_PATH = "./extention.crx"
+EXTENSION_PATH = "./extension.crx"
 metaMask_id = "nkbihfbeogaeaoehlefnkodbefgpgknn"
 
 opt = webdriver.ChromeOptions()
 opt.add_extension(EXTENSION_PATH)  # add the extension
 driver = webdriver.Chrome(options=opt)  # open chrome with metamask extension
 
-# then  seed phrase pahe
+# then  seed phrase
 
 driver.get('chrome-extension://'+metaMask_id + '/home.html#onboarding/import-with-recovery-phrase')
 time.sleep(5)
