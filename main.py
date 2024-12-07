@@ -1,3 +1,4 @@
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -205,3 +206,5 @@ while seedCounter < 5000:
                 # print the seed and balance
                 print("DONE", string, '$', str(usd))
                 print(count)  # print the number of attempts
+
+
